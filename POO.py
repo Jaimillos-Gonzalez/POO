@@ -4,7 +4,7 @@ class Vehiculo:
         self.ruedas = ruedas
 
     def __str__(self):
-        print("Color: {}, {} Ruedas: ".format(self.color,self.ruedas))
+        return "Color: {}, Ruedas: {}".format(self.color,str(self.ruedas))
 
 class Coche(Vehiculo):
     def __init__(self,velocidad,color,ruedas):
@@ -20,7 +20,7 @@ class Bicicleta(Vehiculo):
         self.tipo = tipo
 
     def __str__(self):
-        return "Soy una bici " + super.__str__() + "Soy una bici de tipo: {} y tengo {} ruedas".format(self.tipo, self.ruedas)
+        return "Soy una bici " + super.__str__() + " y soy del tipo: {}".format(self.tipo)
 
 vehiculo =  Vehiculo("Rojo",4)
 
