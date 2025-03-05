@@ -24,9 +24,11 @@ class Bicicleta(Vehiculo):
 
 vehiculo =  Vehiculo("Rojo",4)
 coche = Coche(100,"Azul",4)
+bici = Bicicleta("Gravel","negra",2)
 
 print(vehiculo)
 print(coche)
+print(bici)
 
 
         
